@@ -4,9 +4,11 @@ body, html {
 }
 
 #app {
-    font-family: 'Caveat Brush', cursive;
-    display: flex;
+    /*font-family: 'Caveat Brush', cursive;*/
+    font-family: 'Montserrat', sans-serif;
+    /*display: flex;*/
     align-items: center;
+    text-align: center;
 }
 
 #block {
@@ -24,9 +26,10 @@ svg {
 
 #text {
     text-align: center;
-    font-size: 18vw;
+    font-size: 16vw;
     /*font-size: 32vw;*/
     color: #F9C81D;
+    font-weight: 800;
     text-shadow: 10px 10px #0005;
     white-space: nowrap;
 }
