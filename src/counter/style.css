@@ -15,13 +15,13 @@ body, html {
 }
 
 svg {
-    filter: drop-shadow(6px 6px 0 rgba(0,0,0,0.2));
+    filter: drop-shadow(10px 10px #0005);
 }
 
 #text {
     text-align: center;
     font-size: 32vw;
     color: #F9C81D;
-    text-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+    text-shadow: 10px 10px #0005;
     white-space: nowrap;
 }
