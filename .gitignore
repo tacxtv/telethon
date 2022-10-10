@@ -1,0 +1,5 @@
+build/
+.parcel-cache/
+.idea/
+dist/
+node_modules/

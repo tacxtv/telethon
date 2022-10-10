@@ -1,0 +1,26 @@
+{
+  "name": "@tacxtv/telethon",
+  "version": "1.0.0",
+  "repository": "https://github.com/tacxtv/telethon.git",
+  "author": "Tacx <12997062+tacxticx88@users.noreply.github.com>",
+  "private": true,
+  "scripts": {
+    "serve": "parcel serve src/*.html --lazy"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.186",
+    "parcel": "^2.7.0",
+    "parcel-plugin-static-files-copy": "^2.6.0"
+  },
+  "staticFiles": {
+    "watcherGlob": "**",
+    "staticPath": [
+      "static"
+    ]
+  },
+  "dependencies": {
+    "alpinejs": "^3.10.4",
+    "dayjs": "^1.11.5",
+    "typescript": "^4.8.4"
+  }
+}
