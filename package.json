@@ -8,7 +8,8 @@
     "serve": "parcel serve src/*.html --lazy",
     "build": "parcel build src/*.html --public-url ./",
     "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup",
-    "add-domain": "echo \"telethontips.tacxtv.fr\" > dist/CNAME"
+    "add-domain": "echo \"telethontips.tacxtv.fr\" > dist/CNAME",
+    "cp-static": "cp -r static/* dist/"
   },
   "dependencies": {
     "add": "^2.0.6",

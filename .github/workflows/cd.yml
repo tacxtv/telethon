@@ -27,6 +27,9 @@ jobs:
         run: yarn add-domain
 
       - name: Generate
+        run: yarn cp-static
+
+      - name: Generate
         run: yarn build
 
       - name: Deploy
