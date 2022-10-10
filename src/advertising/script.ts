@@ -3,7 +3,6 @@
 import Alpine from 'alpinejs'
 import * as dayjs from 'dayjs'
 import 'dayjs/locale/fr'
-import {Dayjs} from "dayjs";
 
 // @ts-ignore
 window.Alpine = Alpine

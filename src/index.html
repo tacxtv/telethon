@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Téléthon Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-nightfall.min.css" rel="stylesheet" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="index/style.css">
+</head>
+</head>
+<body>
+<div id="app" x-data>
+    <img src="https://labo.telethongaming.tacxtv.fr/ui/logo-1.png" alt="Logo">
+    <hr class="separator">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <button
+                    class="nav-link active"
+                    id="advertising"
+                    data-bs-toggle="tab"
+                    data-bs-target="#advertising-tab-pane"
+                    type="button">Publicité</button>
+        </li>
+        <li class="nav-item">
+            <button
+                class="nav-link"
+                id="counter"
+                data-bs-toggle="tab"
+                data-bs-target="#counter-tab-pane"
+                type="button">Compteur</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="advertising-tab-pane" tabindex="0">
+            <form>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Image</label>
+                    <input type="email" class="form-control" id="image" x-model="$store.app.form.image">
+                    <div id="imageHelp" class="form-text">Lien de l'image affichée sur votre stream.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="spawn" class="form-label">Durée entre deux publicités (en minutes)</label>
+                    <input type="number" min="1" class="form-control" id="spawn" x-model="$store.app.form.spawn">
+                </div>
+                <div class="mb-3">
+                    <label for="duration" class="form-label">Maintien de la publicité (en secondes)</label>
+                    <input type="number" min="1" class="form-control" id="duration" x-model="$store.app.form.duration">
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="counter-tab-pane" tabindex="0">...</div>
+    </div>
+    <hr class="separator">
+    <div class="mb-3">
+        <label for="url" class="form-label">URL</label>
+        <div class="input-group">
+            <input type="text" class="form-control" id="url" x-bind:value="$store.app.url()" disabled>
+            <button class="btn btn-outline-secondary" type="button" @click="$store.app.copy()">COPIER</button>
+        </div>
+        <div id="urlHelp" class="form-text">À copier/coller dans OBS</div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script type="module" src="index/script.ts"></script>
+</body>
+</html>
