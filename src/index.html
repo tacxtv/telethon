@@ -35,21 +35,28 @@
     </ul>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="advertising-tab-pane" tabindex="0">
-            <form>
-                <div class="mb-3">
-                    <label for="image" class="form-label">Image</label>
-                    <input type="email" class="form-control" id="image" x-model="$store.app.form.image">
-                    <div id="imageHelp" class="form-text">Lien de l'image affichée sur votre stream.</div>
+            <div class="row">
+                <div class="col">
+                    <img src="advertising.gif" alt="Exemple" style="max-width: 300px;">
                 </div>
-                <div class="mb-3">
-                    <label for="spawn" class="form-label">Durée entre deux publicités (en minutes)</label>
-                    <input type="number" min="1" class="form-control" id="spawn" x-model="$store.app.form.spawn">
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="image" class="form-label">Image</label>
+                            <input type="email" class="form-control" id="image" x-model="$store.app.form.image">
+                            <div id="imageHelp" class="form-text">Lien de l'image affichée sur votre stream.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="spawn" class="form-label">Durée entre deux publicités (en minutes)</label>
+                            <input type="number" min="1" class="form-control" id="spawn" x-model="$store.app.form.spawn">
+                        </div>
+                        <div class="mb-3">
+                            <label for="duration" class="form-label">Maintien de la publicité (en secondes)</label>
+                            <input type="number" min="1" class="form-control" id="duration" x-model="$store.app.form.duration">
+                        </div>
+                    </form>
                 </div>
-                <div class="mb-3">
-                    <label for="duration" class="form-label">Maintien de la publicité (en secondes)</label>
-                    <input type="number" min="1" class="form-control" id="duration" x-model="$store.app.form.duration">
-                </div>
-            </form>
+            </div>
         </div>
         <div class="tab-pane fade" id="counter-tab-pane" tabindex="0">...</div>
     </div>
