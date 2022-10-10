@@ -11,7 +11,11 @@ body, html {
 
 #block {
     flex: 1;
-    margin: 5%;
+    /*margin: 5%;*/
+}
+
+img {
+    width: 58vw;
 }
 
 svg {
@@ -20,7 +24,8 @@ svg {
 
 #text {
     text-align: center;
-    font-size: 32vw;
+    font-size: 18vw;
+    /*font-size: 32vw;*/
     color: #F9C81D;
     text-shadow: 10px 10px #0005;
     white-space: nowrap;
