@@ -31,7 +31,7 @@ Alpine.store('app', {
         const debug = parseInt(params.get('debug')) === 1
         if (debug) this.debug()
 
-        // this.lastUsed = window.localStorage.getItem('lastUsed')
+        this.lastUsed = window.localStorage.getItem('lastUsed')
 
         document.addEventListener('DOMContentLoaded', () => {
             if (params.has('image')) document.getElementById('advertising-image').style['background-image'] = `url(${params.get('image')})`
