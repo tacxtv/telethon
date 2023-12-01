@@ -7,7 +7,7 @@ dayjs.locale('fr')
 
 document.addEventListener('DOMContentLoaded', () => {
     const now = dayjs()
-    const target = dayjs('2022-12-8 18:00:00')
+    const target = dayjs('2023-12-8 18:00:00')
     const diff = target.diff(now, 'days')
     if (diff <= 0) {
         const diff2 = target.diff(now, 'hours')
