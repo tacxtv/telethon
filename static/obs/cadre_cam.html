@@ -1,0 +1,41 @@
+<html>
+<head>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        rect#anim {
+            stroke: black;
+            stroke-linecap: round;
+            stroke-width: 8;
+            stroke-dasharray: 0, 0, 40, 470;
+            stroke-dashoffset: 770;
+            stroke-linejoin: round;
+            animation: spin 5s infinite linear;
+        }
+        @keyframes spin {
+            0% {
+                stroke: #00aeef
+            }
+            37.5% {
+                stroke: #ed1c24;
+            }
+            67.5% {
+                stroke: #f69f37;
+            }
+            100% {
+                stroke-dashoffset: -240;
+                stroke: #FFF200;
+            }
+        }
+    </style>
+</head>
+<body>
+<svg width="640" height="360" viewBox="0 0 640 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect style="" x="0" y="0" width="640" height="360" stroke="#F150FC" stroke-width="8"/>
+    <rect id="anim" x="0" y="0" width="640" height="360" fill="none" stroke="#900000" stroke-width="8" stroke-miterlimit="100"/>
+</svg>
+</body>
+</html>
