@@ -117,7 +117,7 @@
                 // this.countdown = eval(document.getElementById('timer').value.replace(/[^-()\d/*+.]/g, ''))
                 this.updateCountdown()
                 this.interval = setInterval(() => {
-                    this.countdown--
+                    this.countdown = this.countdown -1
                     if (this.countdown <= 0) {
                         clearInterval(this.interval)
                     }
